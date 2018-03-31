@@ -1,0 +1,468 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Dosis', sans-serif;
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color:rgb(100, 100, 100);
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 1rem;
+  color: rgb(128, 110, 53);
+  padding: 1rem 0;
+}
+
+h4 {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  font-weight: 300;
+  color: rgb(122, 121, 121);
+}
+
+a {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgb(189, 152, 99);
+  transition: color 0.2s linear 0.2s;
+}
+
+a:hover {
+  color: rgb(190, 190, 190);  
+}
+
+p {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: rgb(177, 177, 177);
+}
+
+.credits {
+  font-size: 0.8rem;
+  margin-top: 2rem;
+}
+
+header {
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 5;
+  padding: 0 2rem;
+  height: 64px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(100, 100, 100);
+}
+
+.logo p {
+  font-size: 1.2rem;
+  padding: 0 0.5rem;
+}
+
+.logo span {
+  color: rgb(189, 152, 99);
+  font-weight: 600;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+ul.desktop {
+  padding-left: 1.5rem;
+}
+
+li{
+  display: inline-block;
+  padding: 0 6px;
+}
+
+li a {
+  text-decoration: none;
+}
+
+li a:hover {
+  color: rgb(190, 190, 190);
+}
+
+.flex-container {
+  display: flex;
+}
+
+.column-left {
+  width: 65%;
+  padding: 0 1.5rem;
+}
+
+.column-right {
+  width: 30%;
+}
+
+#learning, #thesis_video {
+  padding-top: 2rem;
+}
+
+.column-right article:nth-child(odd) {
+  background-color: rgb(255, 255, 255);
+}
+
+.column-right article:first-child {
+  padding-top: 2rem;
+}
+
+article {
+  background-color: rgb(255, 255, 255);
+}
+
+.column-right article{
+  padding: 1rem;
+}
+
+.column-left img {
+  width: 100%;
+  height: auto;
+}
+
+.img-container {
+  width: 35%;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.img-container img {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 575px) {
+
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .column-left, .column-right {
+    width: 100%;
+  }
+
+  .column-right article:nth-child(odd) {
+    background-color: rgb(100, 100, 100);
+  }
+
+  .column-right article:first-child {
+    padding-top: 1.5rem;
+  }
+
+}
+
+@media only screen and (min-width: 600px) {
+
+  ul.mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .logo.desktop, ul.desktop {
+    display: none;
+  }
+
+  header.flex-container {
+    flex-direction: row;
+    align-items: center;
+    }
+
+  nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+ }
+
+  ul.mobile {
+    display: flex;
+    flex: 1;
+    align-items: baseline;
+    justify-content: space-between;
+    height: 100%;
+  }
+}
+
+main {
+  top: 64px;
+  position: relative;
+}
+
+.jumbo {
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(100, 100, 100);
+  padding: 32px 0;
+}
+
+.jumbo img {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 575px) {
+
+  .jumbo, .column-left {
+    padding: 0;
+  }
+
+  .jumbo .column-left {
+    height: 12rem;
+    overflow: hidden;
+  }
+
+  .jumbo img {
+    display: block;
+    object-fit: cover;
+  }
+
+}
+
+h1{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.2rem;
+  padding-bottom: 1.5rem;
+}
+
+.content {
+  padding: 0 16px;
+}
+
+.jumbo p {
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  line-height: 1.8rem;
+  font-weight: 300;
+  padding-bottom: 1.5rem;
+}
+
+.jumbo a {
+  display: block;
+  width: 40%;
+  font-weight: 300;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  padding: 1rem;
+  background-color: rgb(218, 210, 146);
+  color: rgb(255, 255, 255);
+}
+
+.jumbo a:hover {
+  background-color: rgb(190, 190, 190);
+  color: rgb(100, 100, 100);
+}
+
+@media only screen and (max-width: 760px) {
+  .jumbo h1 {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  .jumbo a {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+
+  .jumbo .column-right {
+    padding: 2rem 1rem;
+  }
+
+}
+
+#academy-life .column-left{
+  padding: 32px 24px;
+}
+
+#academy-life .column-right{
+  border-left: 1px solid rgb(100, 100, 100);
+}
+
+#academy-life h2 {
+  text-align: left;
+  padding-top: 32px;
+}
+
+#academy-life article, #thesis_video article {
+  align-items: center;
+  border-bottom: 1px solid rgb(100, 100, 100);
+}
+
+#academy-life article:hover, #thesis_video article:hover {
+  background-color: rgb(190, 190, 190);
+  transition: background-color .2 ease;
+}
+
+article .content {
+  padding-left: 16px;
+}
+
+@media only screen and (max-width: 500px) {
+  #academy-life .column-left {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 760px) {
+
+#academy-life img.mobile{
+  display: none;
+  }
+
+}
+
+@media only screen and (max-width: 760px) {
+
+#academy-life .flex-container {
+    flex-direction: column;
+  }
+
+
+#academy-life img.desktop {
+  display: none;
+}
+
+#academy-life img.mobile{
+  display: block;
+  }
+
+#academy-life article {
+  align-items: flex-start;
+  }
+
+.column-right .img-container {
+  width: 100%;
+  }
+
+}
+
+#learning {
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgb(100, 100, 100)6f6;
+}
+
+div.flex-container {
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#learning article{
+  width: 25%;
+  margin: 16px;
+}
+
+#learning .overlay {
+  background-color: rgb(100, 100, 100);
+}
+
+#learning .content {
+  background-color: rgb(255, 255, 255);
+  padding-bottom: 24px;
+}
+
+#learning img {
+  width: 100%;
+  height: auto;
+  background-color: rgb(100, 100, 100);
+}
+
+@media only screen and (min-width: 500px) and (max-width: 699px) {
+  #learning .flex-container {
+    flex-direction: row;
+  }
+
+  #learning article{
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #learning article{
+    width: 100%;
+    margin: 0 0 0.5rem 0;
+  }
+
+  #learning img, #learning h4, #learning p {
+    display: none;
+  }
+
+  #learning .content {
+    background-color: rgb(100, 100, 100);
+    padding: 1rem;
+    margin: 0;
+    width: 100%;
+  }
+
+  #learning h3 {
+    color: rgb(255, 255, 255);
+    padding: 0;
+  }
+
+  #learning {
+    padding: 2rem 1rem;
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
+
+  article.course {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+#thesis_video {
+  padding-bottom: 24px;
+}
+
+@media only screen and (max-width: 700px) {
+
+  #thesis_video .column-left {
+    width: 100%;
+    padding: 0;
+  }
+
+  #thesis_video .column-right, #thesis_video h3, #thesis_video p {
+    display: none;
+  }
+}
+
+footer {
+  position: relative;
+  top:65px;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 24px 48px 24px;
+  border-top: 1px solid rgb(100, 100, 100);
+}
+
+.copyright, footer a {
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 500px) {
+  footer ul{
+    display: none;
+  }
+}
